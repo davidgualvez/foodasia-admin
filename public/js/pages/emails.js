@@ -22,6 +22,8 @@ $(document).ready(function () {
 	getSelectedFilter(selected);
 });
 
+var dataToBeExport ;
+
 var ps 		= null;
 var sort 	= null;
 var limit 	= null;
@@ -115,9 +117,11 @@ function btnExport(){
 		var now = moment().format('MMMM Do YYYY, h:mm:ss a');
 		var filename = 'Email List as of ' + now; 
 
-		exportToExcel('tblData', filename);
-		// var csv = 'tblData';
-		// downloadCSV(csv, filename);
+		console.log(dataToBeExport);
+		// exportToExcel('tblData', filename);
+		// // var csv = 'tblData';
+		var data = Papa.unparse(dataToBeExport);
+		downloadCSV(data, filename);
 	});
 }
 
@@ -250,7 +254,9 @@ function showSubscribers(){
 			msg('Email list result was not filterd by Dates. Make sure you fill the two dates with valid date');
 		}
 		
+		dataToBeExport = response.data;
 		showTblSubs(response.data);
+
 	});	
 }
 
@@ -319,6 +325,7 @@ function showFranchiseInq(){
 			msg('Email list result was not filterd by Dates. Make sure you fill the two dates with valid date');
 		}
 		
+		dataToBeExport = response.data;
 		showTblFranchInq(response.data);
 	});	
 }
@@ -402,6 +409,7 @@ function showContactInq(){
 			msg('Email list result was not filterd by Dates. Make sure you fill the two dates with valid date');
 		}
 		
+		dataToBeExport = response.data;
 		showTblContactInq(response.data);
 	});	
 }
