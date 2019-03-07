@@ -62,6 +62,6 @@
 	<script src="/js/settings.js"></script> 
 	<!-- custom js -->
 	@yield('custom_js')
-
+	
 </body>
 </html>
