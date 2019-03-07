@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="/css/all.css"> <!-- font awesome  -->
 	<link rel="stylesheet" href="/css/plugins/jquery.mCustomScrollbar.css" />	
 	<link rel="stylesheet" href="/css/plugins/jquery-confirm.min.css" />
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+	<link rel="stylesheet" href="/css/plugins/alertify.min.css"/>
+	<link rel="stylesheet" href="/css/plugins/default.min.css"/>
 	<link rel="stylesheet" href="/css/master.css"> <!-- master  -->
 
 	
@@ -55,7 +55,7 @@
 	{{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> --}}
 	{{-- <script src="/js/app.js"></script> --}} 
 
-	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+	<script src="/js/plugins/alertify.min.js"></script>
 	<script src="/js/plugins/jquery.mCustomScrollbar.concat.min.js"></script> 
 	<script src="/js/plugins/jquery-confirm.min.js"></script> 
 	<script src="/js/sweetalert.min.js"></script> 

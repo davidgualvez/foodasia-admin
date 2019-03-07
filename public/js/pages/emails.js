@@ -115,9 +115,9 @@ function btnExport(){
 		var now = moment().format('MMMM Do YYYY, h:mm:ss a');
 		var filename = 'Email List as of ' + now; 
 
-		//exportToExcel('tblData', filename);
-
-		downloadCSV(csv, fileName);
+		exportToExcel('tblData', filename);
+		// var csv = 'tblData';
+		// downloadCSV(csv, filename);
 	});
 }
 
@@ -231,9 +231,9 @@ function showSubscribers(){
 		date_from: dFrom,
 		date_to  : dTo
 	};
-	console.log(data);
+	//console.log(data);
 	postWithHeader(api+routes.mailSubscribers,data,function(response){
-		console.log(response);
+		//console.log(response);
 		if(response.success == false){
 			if(response.status == 401){
 				showWarning('Message',response.message,function(){});
@@ -259,10 +259,10 @@ function showTblSubs(lists){
 	showSubsHeader();
 	var ctr = 1;
 	$('#tbl-content').empty();
-	console.log(lists);
+	//console.log(lists);
 	// console.log(Object.keys(lists[0]).length);
 	lists.forEach((item)=>{ 
-		console.log(item);
+		//console.log(item);
 		var date = moment(item.created_at).format('L');
 		$('#tbl-content').append( 
 			'<tr>'+
@@ -301,8 +301,8 @@ function showFranchiseInq(){
 	};
 
 	postWithHeader(api+routes.mailFranchiseInquiry,data,function(response){
-		console.log('showFranchiseInq');
-		console.log(response);
+		//console.log('showFranchiseInq');
+		//console.log(response);
 		if(response.success == false){
 			if(response.status == 401){
 				showWarning('Message',response.message,function(){});
@@ -347,10 +347,10 @@ function showTblFranchInq(lists){
 	showFranchiseHeader();
 	var ctr = 1;
 	$('#tbl-content').empty();
-	console.log(lists);
+	//console.log(lists);
 	// console.log(Object.keys(lists[0]).length);
 	lists.forEach((item)=>{ 
-		console.log(item);
+		//console.log(item);
 		var date = moment(item.created_at).format('L');
 		$('#tbl-content').append( 
 			'<tr>'+
@@ -385,8 +385,8 @@ function showContactInq(){
 
 
 	postWithHeader(api+routes.mailContactInquiry,data,function(response){
-		console.log('showContactInq');
-		console.log(response);
+		//console.log('showContactInq');
+		//console.log(response);
 		if(response.success == false){
 			if(response.status == 401){
 				showWarning('Message',response.message,function(){});
@@ -427,10 +427,10 @@ function showTblContactInq(lists){
 	showContactInqHeader();
 	var ctr = 1;
 	$('#tbl-content').empty();
-	console.log(lists);
+	//console.log(lists);
 	// console.log(Object.keys(lists[0]).length);
 	lists.forEach((item)=>{ 
-		console.log(item);
+		//console.log(item);
 		var date = moment(item.created_at).format('L');
 		$('#tbl-content').append( 
 			'<tr>'+

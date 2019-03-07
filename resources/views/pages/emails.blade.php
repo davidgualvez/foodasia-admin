@@ -92,5 +92,6 @@
 <script src="/js/plugins/jquery-ui.js"></script>
 <script src="/js/sweetalert.min.js"></script>
 <script src="/js/plugins/json2csv.js"></script>
+<script src="/js/plugins/papaparse.min.js"></script>
 <script src="/js/pages/emails.js"></script>
 @endsection
