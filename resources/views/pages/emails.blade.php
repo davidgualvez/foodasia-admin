@@ -15,7 +15,7 @@
 			<div class="container mt-3" id="content" style="" >
 				<div class="row d-flex justify-content-center">
 					<div class="col text-right">
-						<button class="btn btn-primary btn-sm" id="nani">Export to Excel</button>
+						<button class="btn btn-primary btn-sm" id="nani">Download</button>
 					</div>
 				</div>
 				<div class="row pt-1 pb-2 mt-3" >
@@ -65,13 +65,15 @@
 				
 				<div class="">
 					<div class="container px-4">
-						<table class="table table-striped table-responsive-lg table-sm w-100 table-dark" id="tblData">
-							<thead class="fa-red" style="color: red;" >
-							</thead>
-							<tbody id="tbl-content">
+						<div >
+							<table class="table table-striped table-responsive-lg table-sm w-100 table-dark" id="tblData" >
+								<thead class="fa-red" style="color: red;" >
+								</thead>
+								<tbody id="tbl-content">
 
-							</tbody>
-						</table>
+								</tbody> 
+							</table>
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -81,13 +83,14 @@
 
 @section('custom_css')
 <link rel="stylesheet" href="/css/plugins/datatables.min.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/css/plugins/jquery-ui.css">
 @endsection
 
 @section('custom_js')
 <script src="/js/plugins/datatables.min.js"></script>
 <script src="/js/plugins/moment.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="/js/sweetalert.min.js"></script> 
+<script src="/js/plugins/jquery-ui.js"></script>
+<script src="/js/sweetalert.min.js"></script>
+<script src="/js/plugins/json2csv.js"></script>
 <script src="/js/pages/emails.js"></script>
 @endsection

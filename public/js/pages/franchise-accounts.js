@@ -41,6 +41,7 @@ function btnRemove(btn_id){
 		               var data = {
 		               		token_id : btn_id
 		               };
+		               
 		               postWithHeader(api + routes.franchiseRemoveToken , data, function(response){ 
 		               		
 		               		console.log(response);
