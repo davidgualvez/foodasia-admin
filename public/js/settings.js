@@ -21,6 +21,7 @@ $(document).ready(function () {
 
 //global variable for all page 
 var api 		= $('#api_url').val();
+var api2 		= $('#api2_url').val();
 var routes	= { 
 	login 					: 'api/portal/login', 
 	franchiseAccounts 		: 'api/portal/headoffice/account/index',

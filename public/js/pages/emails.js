@@ -236,7 +236,7 @@ function showSubscribers(){
 		date_to  : dTo
 	};
 	//console.log(data);
-	postWithHeader(api+routes.mailSubscribers,data,function(response){
+	postWithHeader(api2+routes.mailSubscribers,data,function(response){
 		//console.log(response);
 		if(response.success == false){
 			if(response.status == 401){
@@ -306,7 +306,7 @@ function showFranchiseInq(){
 		date_to  : dTo
 	};
 
-	postWithHeader(api+routes.mailFranchiseInquiry,data,function(response){
+	postWithHeader(api2+routes.mailFranchiseInquiry,data,function(response){
 		//console.log('showFranchiseInq');
 		//console.log(response);
 		if(response.success == false){
@@ -391,7 +391,7 @@ function showContactInq(){
 	};
 
 
-	postWithHeader(api+routes.mailContactInquiry,data,function(response){
+	postWithHeader(api2+routes.mailContactInquiry,data,function(response){
 		//console.log('showContactInq');
 		//console.log(response);
 		if(response.success == false){

@@ -48,6 +48,7 @@
 	</div> 
 	
 	<input type="text" id="api_url" value="{{config('app.api_url')}}" hidden="">
+	<input type="text" id="api2_url" value="{{config('app.api2_url')}}" hidden="">
 	<!-- global js -->
 
 	{{-- <script src="/js/axios.min.js"></script> --}}

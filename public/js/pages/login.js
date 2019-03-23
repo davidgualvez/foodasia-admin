@@ -38,7 +38,7 @@ function login( username,password ){
 		password : password
 	};
 
-	post(api + routes.login, data, function(response){ 
+	post(api2 + routes.login, data, function(response){ 
 		if(response.status == 200){
 
 			if(response.success == false){
